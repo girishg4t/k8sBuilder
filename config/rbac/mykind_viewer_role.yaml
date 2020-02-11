@@ -1,0 +1,20 @@
+# permissions to do viewer mykinds.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: mykind-viewer-role
+rules:
+- apiGroups:
+  - mygroup.k8s.io
+  resources:
+  - mykinds
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - mygroup.k8s.io
+  resources:
+  - mykinds/status
+  verbs:
+  - get

@@ -1,0 +1,7 @@
+domain: k8s.io
+repo: github.com/girishg4t/builder-k8s
+resources:
+- group: mygroup
+  kind: MyKind
+  version: v1beta1
+version: "2"
